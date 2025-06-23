@@ -1,0 +1,254 @@
+.mainContainer {
+  margin-top: 5rem;
+  position: relative;
+  height: 90vh;
+  width: 100vw;
+}
+.slantedImagesAndVideoContainer {
+  height: 100vh;
+  width: 100%;
+}
+
+.slantedVideo {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 10vw, 100% 100%, 0 calc(100% - 10vw));
+}
+.slantedVideo::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.slantedVideotexts {
+  font-family: "roboto";
+  height: 100%;
+  width: 100%;
+  position: relative;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: start;
+  z-index: 2;
+  padding: 2rem;
+  animation: fadeZoomIn 1.5s ease-out forwards;
+}
+.content {
+  height: 50%;
+  width: 50%;
+  margin-left: 5rem;
+  flex-direction: column;
+  text-align: start;
+  justify-content: center;
+  align-items: center;
+}
+.content h1 {
+  font-size: 3rem;
+}
+.content span {
+  font-family: sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: lighter;
+  color: lightblue;
+}
+.content p {
+  font-family: ui;
+  font-size: 1.5rem;
+  margin-top: 1.3rem;
+}
+.slantedvideolastContainer {
+  display: flex;
+  margin-left: 6rem;
+  gap: 20px;
+}
+.slantedvideolastContainer button {
+  padding: 10px;
+  height: 3rem;
+  width: 12rem;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  font-size: 1.2rem;
+  border-radius: 7px;
+}
+.slantedvideolastContainer button:hover {
+  color: black;
+  background-color: white;
+  border-radius: 7px;
+}
+.slantedvideolastContainer p {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+.textContainer {
+  display: flex;
+  height: 100vh;
+}
+.textContainer button {
+  height: 5rem;
+  width: 15rem;
+}
+.divider {
+  font-family: "roboto";
+
+  height: 60%;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.divider p {
+  font-size: 1.3rem;
+}
+.coursesName {
+  padding: 3rem;
+  margin-right: 9rem;
+  font-size: 1.9rem;
+}
+.coursesName h3 {
+  text-shadow: 2px 2px #030303;
+}
+
+.coursesName a {
+  color: white;
+  margin-bottom: 3rem;
+  font-size: 1.2rem;
+}
+
+.paragraphContainer {
+  height: 200px;
+  width: 600px;
+  font-size: 1.5rem;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.affilitations {
+  font-family: "ubuntu";
+  height: 100vh;
+  width: 100vw;
+
+  margin: 3px;
+  line-height: 2rem;
+}
+.affilitationsHeading {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.affilitationContent {
+  display: flex;
+}
+.affilitaionTextContent {
+  margin-left: 2rem;
+  font-size: 18px;
+  max-width: 60%;
+}
+.affilitaionTextContent p {
+  margin-top: 1rem;
+}
+.uniImage {
+  padding: 2rem;
+  margin: 2px;
+  height: 400px;
+  width: 600px;
+}
+.aboutCollegeContainer {
+  font-family: "ubuntu", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  margin-top: 500px;
+}
+
+.aboutKingHeading {
+  text-shadow: 2px 2px black;
+  margin-top: 11px;
+}
+.aboutkingsTextContainer {
+  height: 70%;
+  width: 70%;
+}
+.aboutUsContent {
+  height: 100%;
+  width: 100%;
+}
+.aboutButtons {
+  margin-top: 3rem;
+  margin: 1rem;
+  padding: 10px;
+  height: 7rem;
+  width: 20rem;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  font-size: 1.2rem;
+  border-radius: 7px;
+}
+.aboutButtons:hover {
+  color: black;
+  background-color: white;
+  border-radius: 7px;
+}
+.experienceContainer {
+  height: 100vh;
+  width: 100vw;
+}
+.experienceLink {
+  text-shadow: 2px 2px black;
+}
+.experienceParagraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsla(0, 6%, 93%, 0.611);
+  height: 60vh;
+  width: 100vw;
+
+  font-family: "ubuntu";
+}
+.experienceParagraph p {
+  margin: 2rem;
+  font-size: 1.3rem;
+}
+.experienceParagraph h3 {
+  margin: 2rem;
+  font-size: 2rem;
+}
+.experienceParagraph span {
+  text-decoration: underline;
+}
+.experienceParagraphButton button {
+  padding: 11px;
+  height: 2.5rem;
+  width: 12rem;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  margin-left: 3rem;
+  font-size: 1.2rem;
+  border-radius: 7px;
+}
+@keyframes fadeZoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(1.08) translateY(40px) rotateX(10deg);
+    filter: blur(6px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.02) translateY(-4px) rotateX(0deg);
+    filter: blur(1px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0) rotateX(4deg);
+    filter: blur(0);
+  }
+}

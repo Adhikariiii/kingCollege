@@ -1,0 +1,265 @@
+.heading {
+  font-family: "roboto";
+  margin-top: 7%;
+  height: 90vh;
+  width: 100vw;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  place-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 80%);
+}
+.heading h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  background: -webkit-linear-gradient(pink, blue, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heading p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  height: 300px;
+  width: 900px;
+  font-weight: bolder;
+  color: white;
+}
+.contentContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+
+  border-radius: 16px;
+
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contentContainer hr {
+  border: none;
+
+  width: 60px;
+  margin-bottom: 1.5rem;
+}
+
+.contentContainer h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.contentContainer p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+@media (max-width: 768px) {
+  .contentContainer {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .contentContainer h2 {
+    font-size: 1.75rem;
+  }
+
+  .contentContainer p {
+    font-size: 1rem;
+  }
+}
+
+.galleryHeading {
+  font-family: "roboto";
+  font-size: 2rem;
+  display: flex;
+  place-content: center;
+  margin-top: 20px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: 2rem;
+  margin-right: 2rem;
+  gap: 20px;
+  padding: 0 12.5%;
+}
+.card {
+  position: relative;
+  width: 240px;
+  height: 300px;
+  overflow: hidden;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  font-size: clamp(14px, 1.8vw, 18px);
+}
+
+.images {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  height: 40%;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  z-index: 1;
+}
+
+.modalOverlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+}
+
+.modalView {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #121212;
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.modalContent {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.modalImage {
+  height: 100%;
+  max-height: 100vh;
+  width: 50%;
+  object-fit: cover;
+}
+
+.modalText {
+  width: 50%;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.modalText h4 {
+  font-size: 2rem;
+  color: #facc15;
+}
+
+.modalText p {
+  font-size: 1.2rem;
+}
+
+.modalText button {
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  background: #facc15;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+section {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  z-index: 2;
+}
+
+.name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #facc15;
+  margin: 0;
+}
+
+.role {
+  font-size: 0.85rem;
+  color: #ffffff;
+  margin: 0;
+}
+.slatnedContainer {
+  position: relative;
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 90%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slatnedContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+.slatnedContainer h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  z-index: 1;
+  position: relative;
+}
+
+.slatnedContainer p {
+  max-width: 800px;
+  margin: 1rem auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  z-index: 1;
+  position: relative;
+  padding: 0 1rem;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animatedHeading {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.animatedParagraph {
+  animation: fadeInUp 1.2s ease-out forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+}
