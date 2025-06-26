@@ -1,8 +1,12 @@
 import style from "../components/homepage.module.css";
 import styles from "../components/admission.module.css";
 import Navbar from "./navbar";
-import researching from "../assets/homepage/researching.jpg";
 import jumpingg from "../assets/homepage/sjumping.webp";
+
+//data
+import admission from "../admission.js";
+//footer
+import Footer from "./footer.jsx";
 
 export default function Admission() {
   return (
@@ -49,41 +53,119 @@ export default function Admission() {
                   </div>
                 </div>
               </div>
-              {/* Choose program */}
-              <div className={style.affilitations}>
-                <div className={style.affilitationsHeading}>
-                  <h1>AFFILIATIONS AND ACCREDITATIONS</h1>
+
+              {/* Admission team */}
+
+              <div className={styles.admissionContainer}>
+                <div className={styles.admissonHeading}>
+                  <h1>Meet Our Admission Team</h1>
                 </div>
-                <div className={style.affilitationContent}>
-                  <div className={style.affilitaionTextContent}>
-                    <p>
-                      King’s College is an affiliate of Westcliff University.
-                    </p>
-                    <p>
-                      All Westcliff University programs offered through King’s
-                      College are approved by the Ministry of Education,
-                      Government of Nepal. Westcliff University is
-                      institutionally accredited by the WASC Senior College and
-                      University Commission (WSCUC), 1080 Marina Village
-                      Parkway, Suite 500, Alameda, CA 94501, 510.748.9797.
-                      Business programs offered by Westcliff University through
-                      its affiliate, King’s College are accredited by the
-                      Accreditation Council for Business Schools and Programs
-                      (ACBSP).
-                    </p>
-                    <h3>Recognition</h3>
-                    <p>
-                      Westcliff University ranked 800-1000 in The Times Higher
-                      Education World University Rankings 2024 which includes
-                      1,906 universities across 108 countries and regions(View
-                      details).
-                    </p>
+                {admission.map((person) => {
+                  return (
+                    <div key={person.id} className={styles.admissionTeam}>
+                      <div className={styles.imageContainer}>
+                        <img src={person.image} alt="image" />
+                      </div>
+                      <span>
+                        <h3>{person.personName}</h3>
+                        <p>{person.description}</p>
+                      </span>
+                      <hr />
+                    </div>
+                  );
+                })}
+              </div>
+              <div className="bookConsultant">
+                {" "}
+                <div className={style.slantedImagesAndVideoContainer}>
+                  <div
+                    className={`${style.slantedVideo} ${style.aboutUsClipping}`}
+                    style={{
+                      background: `url(${jumpingg}) center/cover no-repeat`,
+                    }}
+                  >
+                    <div className={style.slantedVideotexts}>
+                      <div
+                        className={`${style.content} ${style.aboutUsContent}`}
+                      >
+                        <h1 className={styles.information}>
+                          {" "}
+                          FIND THE BEST COURSE FOR YOU
+                        </h1>
+                        <div className={styles.aboutkingsTextContainer}>
+                          <p>
+                            Discover your passion with a range of undergraduate
+                            and graduate programs in business, IT, and more, you
+                            can find the program that aligns with your interests
+                            and career goals and take the first step towards a
+                            successful future.
+                          </p>
+                          <div className={styles.aboutButtonContainer}>
+                            <button className={style.aboutButtons}>
+                              BOOK A CONSULTANT
+                            </button>
+                            <button className={style.aboutButtons}>
+                              APPLY NOW
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div className={style.uniImage}>
-                    <a href="https://www.westcliff.edu/">
-                      <img src={""} alt="uniImage" />
-                    </a>
+                  <div className={styles.textContainer}>
+                    <h3>STEPS OF ADMISSION</h3>
+                    <p>Here’s what you can expect in the admissions process:</p>
+
+                    <div className={styles.admissionStep}>
+                      <h4>
+                        Step 1: Submitting the application form and relevant
+                        documents
+                      </h4>
+                      <p>
+                        The documents required are mentioned in the application
+                        form. You can fill out an application form
+                        <span>
+                          {" "}
+                          <a href="#">here</a>.
+                        </span>
+                      </p>
+                    </div>
+
+                    <div className={styles.admissionStep}>
+                      <h4>Step 2: Statement of Purpose</h4>
+                      <p>
+                        This will be a 300-word essay about your background and
+                        the reason behind choosing King's College and the
+                        Westcliff University affiliated MBA program. You need to
+                        submit a digital copy of the SOP before the personal
+                        interview.
+                      </p>
+                    </div>
+
+                    <div className={styles.admissionStep}>
+                      <h4>Step 3: Entrance Examination & Personal Interview</h4>
+                      <p>
+                        We will schedule an entrance & interview for you and get
+                        back to you with the date and time. After these, you
+                        will be informed about your selection and any further
+                        requirements. Selections will be based on four criteria:
+                        Entrance examination, personal interview, past academic
+                        record, and extra-curricular activities.
+                      </p>
+                      <hr />
+                      <p>
+                        Don't miss your chance to unlock your potential - apply
+                        now to King's College Nepal and discover endless
+                        opportunities for growth and success in your chosen
+                        field!
+                      </p>
+                      <h1>
+                        Admission DeadLine : <span>July 29, 2025</span>
+                      </h1>
+                      <button>Apply Now</button>
+                    </div>
                   </div>
+                  <Footer />
                 </div>
               </div>
             </div>

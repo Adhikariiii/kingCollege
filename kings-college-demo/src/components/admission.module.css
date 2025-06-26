@@ -1,4 +1,183 @@
 .admissionContainer {
-  font-family: "ubuntu", sans-serif;
   margin-top: 5rem;
+}
+.admissionTeamContainer {
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  height: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+.admissonHeading {
+  width: 100vh;
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+.information {
+  margin-top: 4rem;
+  text-shadow: 2px 2px black;
+}
+.aboutButtonContainer {
+  margin-top: 4rem;
+}
+.aboutkingsTextContainer {
+  margin-top: 3rem;
+  height: 300px;
+  width: 900px;
+}
+.textContainer {
+  padding: 2rem;
+  background-color: #fefefe;
+  border-radius: 12px;
+
+  max-width: 900px;
+  margin: 2rem auto;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.textContainer h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.admissionStep {
+  margin-bottom: 2rem;
+}
+
+.admissionStep h4 {
+  font-size: 1.25rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+.admissionStep h1 {
+  color: #222;
+  margin-bottom: 0.5rem;
+  padding: 2rem;
+}
+.admissionStep button {
+  color: #222;
+  background-color: white;
+  height: 3rem;
+  width: 15rem;
+  border-radius: 9px;
+}
+.admissionStep button:hover {
+  color: black;
+  background-color: rgb(179, 175, 175);
+  height: 3rem;
+  width: 15rem;
+  border-radius: 9px;
+}
+.admissionStep button {
+  color: #222;
+  background-color: white;
+  height: 3rem;
+  width: 15rem;
+  border-radius: 9px;
+}
+
+.admissionStep p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  padding: 3px;
+}
+
+.admissionStep a {
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.admissionStep a:hover {
+  text-decoration: underline;
+}
+
+/* .admissionTeamContainer h1 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #333;
+} */
+
+.admissionTeam {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imageContainer {
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 3px solid #ddd;
+}
+
+.admissionTeam img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.admissionTeam img:hover {
+  transform: scale(1.05);
+}
+
+.admissionTeam span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.admissionTeam h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #222;
+}
+
+.admissionTeam p {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.admissionTeam hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin-top: 1rem;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .admissionTeam {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imageContainer {
+    height: 150px;
+    width: 150px;
+  }
+
+  .admissionTeam span {
+    margin-top: 1rem;
+  }
 }

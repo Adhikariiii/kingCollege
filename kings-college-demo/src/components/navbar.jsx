@@ -33,19 +33,19 @@ export default function Navbar() {
             <Link to={"/Admission"}>Admission + Aid</Link>
           </li>
           <li>
-            <a href="#">Life at King's</a>
+            <Link to={"/lifeAtKings"}>Life at King's</Link>
           </li>
           <li>
             <Link to={"/Alumni"}>Alumni</Link>
           </li>
           <li>
-            <a href="#">Student Projects</a>
+            <Link to={"/studentProjects"}>Student Projects</Link>
           </li>
           <li>
-            <a href="#">About King's</a>
+            <Link to={"/AboutKings"}>About King's</Link>
           </li>
           <li>
-            <a href="#">Events</a>
+            <Link to={"/Events"}>Events</Link>
           </li>
           <li>
             <a href="#">Publications</a>

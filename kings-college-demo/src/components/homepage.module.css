@@ -153,6 +153,7 @@
 }
 .affilitaionTextContent p {
   margin-top: 1rem;
+  font-size: 1.25rem;
 }
 .uniImage {
   padding: 2rem;
@@ -235,6 +236,17 @@
   font-size: 1.2rem;
   border-radius: 7px;
 }
+.modalImage {
+  max-width: 90vw;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
 @keyframes fadeZoomIn {
   0% {
     opacity: 0;

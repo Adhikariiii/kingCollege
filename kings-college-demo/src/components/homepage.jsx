@@ -6,7 +6,7 @@ import uniImage from "../assets/homepage/logo.png";
 import style from "./homepage.module.css";
 import { Link } from "react-router-dom";
 import Footer from "./footer";
-
+import AboutUs from "./aboutUs";
 export default function HomePage() {
   const onClick = () => {};
 
@@ -228,6 +228,7 @@ export default function HomePage() {
                   <button>APPLY NOW</button>
                 </div>
               </div>
+
               <Footer />
             </div>
           </div>

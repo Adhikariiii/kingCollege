@@ -1,0 +1,97 @@
+.studentProjectsContainer {
+  font-family: "ubuntu", sans-serif;
+  margin-top: 5rem;
+}
+.content h2 {
+  font-size: 3rem;
+  padding: 1rem;
+  margin: 2rem;
+  text-shadow: 2px 2px black;
+}
+.textContainer {
+  padding: 2rem;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.textContainer h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.textContainer p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.textContainer strong {
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+.textContainer p {
+  margin-left: 4rem;
+  width: 60%;
+  font-size: 1.2rem;
+}
+span {
+  margin-left: 4rem;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+.pawsome {
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+.imageContainer {
+  margin-left: 7rem;
+
+  height: 30rem;
+  width: 80%;
+  padding: 1rem;
+  display: flex;
+}
+.firstSection {
+  height: 100%;
+  width: 50%;
+
+  margin: 5px;
+}
+.firstSection img {
+  height: 100%;
+  width: 100%;
+}
+.secondSection img {
+  height: 100%;
+  width: 100%;
+}
+.secondSection {
+  height: 100%;
+  width: 50%;
+
+  margin: 5px;
+  padding: 9px;
+}
+.subcontainer {
+  height: 50%;
+  width: 100%;
+
+  margin: 5px;
+  display: flex;
+  padding: 7px;
+  justify-content: space-between;
+}
+.secondSubContainer {
+  padding: 5px;
+
+  height: 100%;
+  width: 50%;
+}

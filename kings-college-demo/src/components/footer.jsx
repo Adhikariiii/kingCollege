@@ -52,8 +52,8 @@ export default function Footer() {
             <img src={youtube} alt="youtube" />
           </a>
         </h4>
-        <div className="location">
-          <p>
+        <div>
+          <p className={style.location}>
             Babarmahal, Kathmandu <br />
             01 - 5325909, 01 - 5324520, 01 - 5324574 <br />
             General inquiry: <br />
