@@ -34,9 +34,16 @@ export default function Publications() {
             <h2>Report</h2>
 
             {click.report ? (
-              <FaArrowUp onClick={() => handleClick("report")} />
+              <FaArrowUp
+                onClick={() => handleClick("report")}
+                className={styles.arrows}
+                style={{ height: "1.5rem" }}
+              />
             ) : (
-              <FaArrowDown onClick={() => handleClick("report")} />
+              <FaArrowDown
+                onClick={() => handleClick("report")}
+                className={styles.arrows}
+              />
             )}
           </div>
           {click.report && (

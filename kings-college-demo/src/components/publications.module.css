@@ -28,6 +28,9 @@ main {
   text-decoration: none;
   padding: 1rem;
 }
+.arrow {
+  height: 2rem;
+}
 
 footer {
   margin-top: 30%;
