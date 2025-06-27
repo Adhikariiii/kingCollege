@@ -1,4 +1,5 @@
 import Navbar from "./navbar";
+import Footer from "./footer";
 import style from "../components/homepage.module.css";
 import styles from "../components/studentProjects.module.css";
 import image from "../assets/studentProject/image3.jpg";
@@ -88,6 +89,7 @@ export default function StudentProjects() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

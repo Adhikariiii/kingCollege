@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import collegeLogo from "../assets/collegeLogo.webp";
-import searchIcon from "../assets/searchIcon.png";
+
 import style from "./navbar.module.css";
 
 //module
@@ -48,13 +48,8 @@ export default function Navbar() {
             <Link to={"/Events"}>Events</Link>
           </li>
           <li>
-            <a href="#">Publications</a>
+            <Link to={"/Publications"}>Publications</Link>
           </li>
-          {/* <img
-            src={searchIcon}
-            alt="search-icon"
-            className={style.searchIcon}
-          /> */}
         </ol>
       </nav>
     </div>

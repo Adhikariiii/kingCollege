@@ -8,10 +8,12 @@ import Page from "./components/lifeAtKings.jsx";
 import AboutKings from "./components/aboutKings.jsx";
 import StudentProjects from "./components/studentProjects.jsx";
 import Event from "./components/events.jsx";
+import Publications from "./components/Publications.jsx";
 
 //people data
 import people from "./data.js";
 import team from "./team.js";
+import programs from "./components/events.js";
 
 export default function App() {
   return (
@@ -32,7 +34,8 @@ export default function App() {
           <Route path="/lifeAtKings" element={<Page />} />
           <Route path="/studentProjects" element={<StudentProjects />} />
           <Route path="/AboutKings" element={<AboutKings detail={team} />} />
-          <Route path="/Events" element={<Event />} />
+          <Route path="/Events" element={<Event detail={programs} />} />
+          <Route path="/Publications" element={<Publications />} />
         </Routes>
       </Router>
     </>

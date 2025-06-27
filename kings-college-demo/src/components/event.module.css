@@ -1,3 +1,50 @@
 .eventsContainer {
   margin-top: 5rem;
 }
+.contentHeading {
+  text-shadow: 2px 2px black;
+}
+.calenderEvents {
+  display: flex;
+  justify-content: space-around;
+}
+.textContainer {
+  height: auto;
+  width: 50%;
+  margin-right: 5rem;
+}
+.span {
+  padding: 9rem;
+  font-size: 1.2rem;
+}
+.textContainer p {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  line-height: 1.5;
+  color: #484747;
+}
+.textContainer img {
+  height: auto;
+  width: 50%;
+}
+.month {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 2px;
+}
+.monthButton {
+  font-size: 11px;
+  border: 1px solid rgb(167, 167, 6);
+}
+.anchorTag {
+  height: 2rem;
+  padding: 1.5rem;
+  width: 4rem;
+  font-size: 1.6rem;
+  color: #484747;
+}
+.horizontal {
+  margin: 2rem;
+  color: yellow;
+}
