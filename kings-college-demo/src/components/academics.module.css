@@ -1,0 +1,24 @@
+.academicsContainer {
+  margin-top: 1rem;
+  display: flex;
+  font-family: "ubuntu", sans-serif;
+  align-items: flex-start; /* 👈 add this */
+}
+.courseContents {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  font-size: 1.2rem;
+  justify-content: space-evenly;
+}
+.courseContents h1 {
+  margin: 1rem;
+}
+.courseContents a {
+  padding: 0rem;
+  margin: 0;
+  padding: 4px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+}

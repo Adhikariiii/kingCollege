@@ -30,6 +30,7 @@ export default function App() {
             }
           />
           <Route path="/Alumni" element={<Alumni detail={people} />} />
+
           <Route path="/Admission" element={<Admission />} />
           <Route path="/lifeAtKings" element={<Page />} />
           <Route path="/studentProjects" element={<StudentProjects />} />

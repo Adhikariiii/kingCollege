@@ -50,3 +50,18 @@ ol a:hover {
   width: 20px;
   cursor: pointer;
 }
+.modal {
+  margin-top: 7rem;
+  background-color: rgb(248, 241, 241);
+  color: black;
+  height: 90vh;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+.modalHeading {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
